@@ -16,7 +16,7 @@ const RESOURCES = {
 "/assets/images/dice3.png": "683bc715f147a48b2e2dcabf2d573a05",
 "/assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
 "/assets/FontManifest.json": "01700ba55b08a6141f33e168c4a6c22f",
-"/main.dart.js": "cf7420fac289594de8b8d67c2d92c2f6",
+"/main.dart.js": "6161ffdf3c4c7b898a703f4a1dd3acee",
 "/index.html": "19d3b8c9058277998bc2f9ec1ea88f66"
 };
 
