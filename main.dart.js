@@ -22643,8 +22643,12 @@ b=r}}C.b.m(l.b,b,a)}}
 F.mb.prototype={
 aN:function(){return new F.xE(C.q)}}
 F.xE.prototype={
-wX:function(){this.e=C.n0.wr(6)+1
-this.d=C.n0.wr(6)+1},
+wX:function(){var t,s,r=this
+r.e=C.n0.wr(6)+1
+t=r.d=C.n0.wr(6)+1
+s=r.e
+if(s===7)r.e=s-1
+if(t===7)r.d=t-1},
 L:function(a){var t=this,s=null
 return new T.fB(C.a_,s,s,T.Xs(H.b([new T.ms(1,C.fE,N.R3(U.Rb("images/dice"+t.d+".png"),new F.Ki(t)),s),new T.ms(1,C.fE,N.R3(U.Rb("images/dice"+t.e+".png"),new F.Kj(t)),s)],u.E),C.nh,C.oc),s)}}
 F.Ki.prototype={
