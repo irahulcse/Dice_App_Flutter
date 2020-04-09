@@ -18,9 +18,14 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class DicePage extends StatelessWidget {
-  dynamic leftDiceNumber = 1;
-  dynamic rightDiceNumber = 1;
+class DicePage extends StatefulWidget {
+  @override
+  _DicePageState createState() => _DicePageState();
+}
+
+class _DicePageState extends State<DicePage> {
+  int leftDiceNumber = 1;
+  int rightDiceNumber = 1;
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -35,17 +40,20 @@ class DicePage extends StatelessWidget {
                 leftDiceNumber = Random().nextInt(6);
               },
               child: Image.asset(
-                'dice$leftDiceNumber.png',
+                'dice1.png',
               ),
             ),
           ),
           Expanded(
             flex: 1,
             child: FlatButton(
+              //int x;
+              onPressed: () {
+                leftDiceNumber = Random().nextInt(6);
+              },
               child: Image.asset(
                 'dice1.png',
               ),
-              onPressed: () {},
             ),
           ),
         ],
