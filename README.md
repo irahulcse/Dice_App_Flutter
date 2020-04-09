@@ -18,7 +18,7 @@ The Parent Repository of this project can be found on this [link](https://github
 * [✅] Live Working Project
 * [✅] Center Widget used, Expanded Widget, Flat Button and Image.asset Widget for uploading the image
 * [✅] Game Play through Random Stateful Methods
-* [❌] Register and Login Feature will be updated soon using Firebase.
+* [❌] UI Could be improved in this application.
 
 
 ### Created with :heart:
