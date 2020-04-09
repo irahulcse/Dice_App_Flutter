@@ -6,9 +6,17 @@ void main() => runApp(
       new MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.blueAccent,
           appBar: new AppBar(
-            title: Text("Flutter Dice Game"),
+            title: Center(
+              child: Text(
+                "Flutter Dice Game",
+                style: TextStyle(
+                  fontSize: 40,
+                  // backgroundColor: Colors.orange,
+                ),
+              ),
+            ),
             backgroundColor: Colors.purple,
           ),
           body: new DicePage(),
@@ -24,6 +32,12 @@ class DicePage extends StatefulWidget {
 class _DicePageState extends State<DicePage> {
   int leftDiceNumber = 1;
   int rightDiceNumber = 1;
+
+  void rohan() {
+    rightDiceNumber = Random().nextInt(6) + 1;
+    leftDiceNumber = Random().nextInt(6) + 1;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -36,8 +50,9 @@ class _DicePageState extends State<DicePage> {
               //int x;
               onPressed: () {
                 setState(() {
-                  leftDiceNumber = Random().nextInt(6)+1;
+                  rohan();
                 });
+
                 //leftDiceNumber = Random().nextInt(6);
               },
               child: Image.asset(
@@ -51,7 +66,7 @@ class _DicePageState extends State<DicePage> {
               //int x;
               onPressed: () {
                 setState(() {
-                  rightDiceNumber = Random().nextInt(6)+1;
+                  rohan();
                 });
               },
               child: Image.asset(
@@ -64,3 +79,5 @@ class _DicePageState extends State<DicePage> {
     );
   }
 }
+
+void rohan() {}
