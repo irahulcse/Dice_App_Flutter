@@ -36,6 +36,13 @@ class _DicePageState extends State<DicePage> {
   void rohan() {
     rightDiceNumber = Random().nextInt(6) + 1;
     leftDiceNumber = Random().nextInt(6) + 1;
+    if(rightDiceNumber==7){
+      rightDiceNumber=rightDiceNumber-1;
+    }
+    if(leftDiceNumber==7){
+      leftDiceNumber=leftDiceNumber-1;
+    }
+    
   }
 
   @override
